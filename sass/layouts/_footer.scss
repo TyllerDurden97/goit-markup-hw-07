@@ -35,12 +35,13 @@
   line-height: 1.71;
   text-decoration: none;
   font-style: normal;
+&:hover,
+   &:focus {
+      color: var(--accent-color);
+   }
 }
 
-.address-footer:hover,
-.address-footer:focus {
-  color: var(--accent-color);
-}
+
 
 .footer-flex {
   display: flex;
@@ -87,6 +88,10 @@
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms var(--transition-cubic);
+&:hover,
+   &:focus {
+      background-color: var(--accent-color);
+   }
 }
 
 .footer-soc-icon {
@@ -94,10 +99,7 @@
   fill: var(--main-white-color);
 }
 
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--accent-color);
-}
+
 
 .footer-form {
   margin-left: 93px;

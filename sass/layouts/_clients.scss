@@ -20,23 +20,25 @@
   border-radius: 4px;
   display: flex;
   transition: border-color 250ms var(--transition-cubic);
+&:hover,
+   &:focus {
+      border-color: var(--accent-color);
+      cursor: pointer;
+   }
+
 }
 
-.clients-list__link:hover,
-.clients-list__link:focus {
-  border-color: var(--accent-color);
-  cursor: pointer;
-}
 
-.clients-list__link:hover .clients-list__icon {
-  fill: var(--accent-color);
-}
 
-.clients-list__link:focus .clients-list__icon {
-  fill: var(--accent-color);
-}
+
 
 .clients-list__icon {
   fill: var(--icons-main-color);
   transition: fill 250ms var(--transition-cubic);
+.clients-list__link:hover & {
+      fill: var(--accent-color);
+   }
+   .clients-list__link:focus & {
+      fill: var(--accent-color);
+   }
 }
